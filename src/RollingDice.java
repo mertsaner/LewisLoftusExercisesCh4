@@ -18,7 +18,13 @@ public class RollingDice {
         die1.roll();  // Using roll operation(method) to roll die1
         die2.roll();  // Using roll operation(method) to roll die2
 
-        System.out.println("Die One: " + die1 + ", Die Two: " + die2);//We are printing the object, I wonder what this will print :D
+        System.out.println("1Die One: " + die1 + ", Die Two: " + die2);//We are printing the object, I wonder what this will print :D
+
+        System.out.println(5+5);
+        //System.out.println(" " + die1 + die2); //This works alright since first " " put everything to string mode
+        //System.out.println(die1 + die2); //This gives an error since die1 and die2 are in string form
+
+
         //The following line works and does the same job with the line above //System.out.println("1Die One: " + die1.getFaceValue() + ", Die Two: " + die2.getFaceValue());//Expected Writing, let see what it prints
 
 

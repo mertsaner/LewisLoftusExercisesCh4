@@ -10,6 +10,8 @@ public class Die {
     private final int MAX = 6; //maximum face value, written with final so that it will not change (like const in C++)
 
     private int faceValue; // Initializing current value showing on the die
+    private int backValue; // Initializing current value showing back of the die
+
 
     //----------------------------------------------------------------------------------
     // Constructor: Sets the initial face value. Note: Constructors are always same name with the class.
@@ -17,6 +19,7 @@ public class Die {
     //----------------------------------------------------------------------------------
     public Die(){       //Constructor does not use return type since initializes the object
         faceValue = 1;
+        backValue = 117;
     }
 
     //-----------------------------------------------------------------------------------
@@ -49,7 +52,7 @@ public class Die {
     //--------------------------------------------------------------------------------------
     public String toString () {
         String result = Integer.toString(faceValue);
-
         return result;
     }
+
 }
