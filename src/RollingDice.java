@@ -18,14 +18,24 @@ public class RollingDice {
         die1.roll();  // Using roll operation(method) to roll die1
         die2.roll();  // Using roll operation(method) to roll die2
 
-        System.out.println("1Die One: " + die1 + ", Die Two: " + die2);//We are printing the object, I wonder what this will print :D
+        //===============================================================================================
+        //Important these three calling style does the exact same thing
+        // IMPORTANT: The "toString" method of any object gets "called automatically" whenever you pass the object to
+        // a print or println method to obtain a string description of the object to print.
+        //============
+        // So first two is exactly the same
+        // Last one is different method but reaches the same value
+        //============
+        System.out.println("0 Die One: " + die1 + ", Die Two: " + die2);//We are printing the object, when we print an object
+        System.out.println("1 Die One: " + die1.toString() + ", Die Two: " + die2.toString());
+        System.out.println("2 Die One: " + die1.getFaceValue() + ", Die Two: " + die2.getFaceValue()); //The following line works and does the same job with the line above //Expected Writing, let see what it prints
+        //===============================================================================================
 
-        System.out.println(5+5);
+        //System.out.println(5+5); //Works since in binary operator + could be used for two integer objects
         //System.out.println(" " + die1 + die2); //This works alright since first " " put everything to string mode
         //System.out.println(die1 + die2); //This gives an error since die1 and die2 are in string form
 
 
-        //The following line works and does the same job with the line above //System.out.println("1Die One: " + die1.getFaceValue() + ", Die Two: " + die2.getFaceValue());//Expected Writing, let see what it prints
 
 
         die1.roll();  // Using roll operation(method) rolling die1 again

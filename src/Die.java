@@ -55,5 +55,4 @@ public class Die {
         String result = Integer.toString(faceValue);
         return result;
     }
-
 }
