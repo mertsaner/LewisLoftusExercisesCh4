@@ -51,8 +51,8 @@ public class Die {
     //--------------------------------------------------------------------------------------
     // Returns a string representation of this die.
     //--------------------------------------------------------------------------------------
-   // public String toString () {
-   //     String result = Integer.toString(faceValue);
-   //     return result;
-   // }
+    public String toString () {
+        String result = Integer.toString(faceValue);
+        return result;
+    }
 }
