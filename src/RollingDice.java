@@ -19,7 +19,7 @@ public class RollingDice {
         die2.roll();  // Using roll operation(method) to roll die2
 
         System.out.println("Die One: " + die1 + ", Die Two: " + die2);//We are printing the object, I wonder what this will print :D
-        //System.out.println("Die One: " + die1.getFaceValue() + ", Die Two: " + die2.getFaceValue());//Expected Writing, let see what it prints
+        //The following line works and does the same job with the line above //System.out.println("1Die One: " + die1.getFaceValue() + ", Die Two: " + die2.getFaceValue());//Expected Writing, let see what it prints
 
 
         die1.roll();  // Using roll operation(method) rolling die1 again
@@ -28,7 +28,12 @@ public class RollingDice {
         System.out.println("Die One: " + die1 + ", Die Two: " + die2);//We are printing the object, I wonder what this will print :D
 
         sum = die1.getFaceValue() + die2.getFaceValue(); //sum object equals to sum of faceValue of two objects (die1 and die2)
+        //The following line gives error since we can sum two objects from Die class with binary operator   //int sum2 = die1 + die2; //sum object equals to sum of faceValue of two objects (die1 and die2)
+        //But we can sum two objects from int/double/float class using binary operator
+
         System.out.println("Sum: " + sum); //Printing the Sum
+        //System.out.println("Sum2: " + sum2); //Printing the Sum
+
 
         sum = die1.roll() + die2.roll();  //Sum object equals to sum of the two rolls of two objects
         System.out.println("Die One: " + die1 + " , Die Two: " + die2);
