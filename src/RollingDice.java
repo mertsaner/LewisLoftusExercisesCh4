@@ -19,6 +19,8 @@ public class RollingDice {
         die2.roll();  // Using roll operation(method) to roll die2
 
         System.out.println("Die One: " + die1 + ", Die Two: " + die2);//We are printing the object, I wonder what this will print :D
+        //System.out.println("Die One: " + die1.getFaceValue() + ", Die Two: " + die2.getFaceValue());//Expected Writing, let see what it prints
+
 
         die1.roll();  // Using roll operation(method) rolling die1 again
         die2.setFaceValue(4); // Using setFaceValue operation(method) change the state of the object
@@ -29,7 +31,7 @@ public class RollingDice {
         System.out.println("Sum: " + sum); //Printing the Sum
 
         sum = die1.roll() + die2.roll();  //Sum object equals to sum of the two rolls of two objects
-        System.out.println("Die One: " + die1 + + " , Die Two: " + die2);
+        System.out.println("Die One: " + die1 + " , Die Two: " + die2);
         System.out.println("New sum: " + sum);
     } //End of the main method
 }
