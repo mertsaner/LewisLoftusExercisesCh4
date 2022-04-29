@@ -35,6 +35,7 @@ public class Die {
     // Face value mutator. This method help us to set the FaceValue
     //-------------------------------------------------------------------------------------
     public void setFaceValue (int value){
+
         faceValue = value;
     }
 
