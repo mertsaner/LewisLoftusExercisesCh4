@@ -5,13 +5,16 @@
 // between 1 and 6.
 //**********************************
 
-public class Die {
+public class Die { //Die class responsible from initializing and updating of face value, which is called ENCAPSULATION
+                    //The main method should not (and in fact cannot) access the faceValue variable directly.
 
     private final int MAX = 6; //maximum face value, written with final so that it will not change (like const in C++)
+    int alpha;
 
     private int faceValue; // Initializing current value showing on the die
     private int backValue; // Initializing current value showing back of the die
 
+    //All the variables defined privately so they we enforce encapsulation
 
     //----------------------------------------------------------------------------------
     // Constructor: Sets the initial face value. Note: Constructors are always same name with the class.
@@ -20,6 +23,8 @@ public class Die {
     public Die(){       //Constructor does not use return type since initializes the object
         faceValue = 1;
         backValue = 117;
+        //System.out.println("Alpha is: " + alpha); //prints zero since alpha initialized to 0
+
     }
 
     //-----------------------------------------------------------------------------------
