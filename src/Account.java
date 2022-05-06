@@ -1,8 +1,12 @@
+import java.io.Serial;
+// This is my version of Account Java
+//Gives wrong result, check again -431.75 as a result of the program
 public class Account {
 
-    String AccountName;
-    int AccountNumber; //const could be used
-    double deposit;
+    private String AccountName;
+    private int AccountNumber; //const could be used
+    private double deposit;
+    final double RATE = 0.035;
 
     public Account (String name, int AccountNumber, double deposit){ //Constructor
         AccountName = name;
@@ -11,7 +15,7 @@ public class Account {
     }
 
     public double deposit (double deposit){
-        deposit= this.deposit + deposit;
+        deposit = this.deposit + deposit;
         //New Value of deposit equals thisdeposit(deposit amount entered) + earlier deposit
         return deposit;
     }
@@ -31,7 +35,17 @@ public class Account {
 
     public void addInterest()
     {
-        deposit =  deposit + deposit * 0.02;
+        deposit =  deposit + deposit * RATE;
     }
 
+    @Override
+    @Serial
+    public String toString() {
+        return "Account{" +
+                "AccountName='" + AccountName + '\'' +
+                ", AccountNumber=" + AccountNumber +
+                ", deposit=" + deposit +
+                ", RATE=" + RATE +
+                '}';
+    }
 }
