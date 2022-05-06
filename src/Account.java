@@ -33,7 +33,6 @@ public class Account {
         return balance;
     }
 
-
     public void addInterest() {
         balance =  balance + (balance * RATE);
     }
