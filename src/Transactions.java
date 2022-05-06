@@ -19,7 +19,7 @@ public class Transactions {
         double smithBalance = acct2.deposit(500.00);
         System.out.println("Smith balance after deposit: " + smithBalance);
 
-        System.out.println("Smith balance after withdrawal: " + acct2.withdraw (430.25, 1.50));
+        System.out.println("Smith balance after withdrawal: " + acct2.withdraw (430.75, 1.50));
 
         acct1.addInterest();
         acct2.addInterest();

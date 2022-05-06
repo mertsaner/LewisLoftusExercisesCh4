@@ -1,51 +1,48 @@
 import java.io.Serial;
 // This is my version of Account Java
-//Gives wrong result, check again -431.75 as a result of the program
 public class Account {
 
     private String AccountName;
     private int AccountNumber; //const could be used
-    private double deposit;
+    private double balance;
     final double RATE = 0.035;
 
-    public Account (String name, int AccountNumber, double deposit){ //Constructor
+    public Account (String name, int AccountNumber, double initialBalance){ //Constructor
         AccountName = name;
-        AccountNumber = this.AccountNumber;
-        deposit = this.deposit;
+        this.AccountNumber = AccountNumber;  //this. almost always in left hand side
+        //AccountNumber = AccountNumber2; //or this.AccountNumber = AccountNumber;
+        balance = initialBalance;
     }
 
     public double deposit (double deposit){
-        deposit = this.deposit + deposit;
-        //New Value of deposit equals thisdeposit(deposit amount entered) + earlier deposit
-        return deposit;
+        balance = balance + deposit;
+        //New Value of deposit equals this deposit(deposit amount entered) + earlier deposit
+        return balance;
     }
 
-    public double getDeposit() {
-        return deposit;
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 
-    public void setDeposit(double deposit) {
-        this.deposit = deposit;
+    public double getBalance() {
+        return balance;
     }
 
     public double withdraw(double withdrawAmount, double fee){
-        deposit = deposit - withdrawAmount - fee;
-        return deposit;
+        balance = balance - withdrawAmount - fee;
+        return balance;
     }
 
-    public void addInterest()
-    {
-        deposit =  deposit + deposit * RATE;
+    public void addInterest() {
+        balance =  balance + (balance * RATE);
     }
 
     @Override
-    @Serial
     public String toString() {
         return "Account{" +
                 "AccountName='" + AccountName + '\'' +
                 ", AccountNumber=" + AccountNumber +
-                ", deposit=" + deposit +
-                ", RATE=" + RATE +
+                ", balance=" + balance +
                 '}';
     }
 }
