@@ -60,4 +60,12 @@ public class Die { //Die class responsible from initializing and updating of fac
         String result = Integer.toString(faceValue);
         return result;
     }
+
+    //All methods defined publicly so in here methods provide services to clients
+    //These all are service methods
 }
+//========================================================================================
+//                        public               ===             private
+//====Variables==Violate Encapsulation         ===      Enforce Encapsulation
+//====Methods====Provide Services to Clients   ===   Support other methods in the class
+//========================================================================================

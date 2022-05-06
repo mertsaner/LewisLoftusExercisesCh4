@@ -39,6 +39,7 @@ public class RollingDice {
 
         die1.roll();  // Using roll operation(method) rolling die1 again
         die2.setFaceValue(4); // Using setFaceValue operation(method) change the state of the object
+        //die2.setFaceValue(40); Normally setting 40 should not permitted
 
         System.out.println("Die One: " + die1 + ", Die Two: " + die2);//We are printing the object, I wonder what this will print :D
 
@@ -53,10 +54,6 @@ public class RollingDice {
         sum = die1.roll() + die2.roll();  //Sum object equals to sum of the two rolls of two objects
         System.out.println("Die One: " + die1 + " , Die Two: " + die2);
         System.out.println("New sum: " + sum);
-
-
-        int alpha = 0;
-        System.out.println("Alpha is: " + alpha);
 
     } //End of the main method
 }
