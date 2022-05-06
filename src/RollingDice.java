@@ -55,5 +55,7 @@ public class RollingDice {
         System.out.println("Die One: " + die1 + " , Die Two: " + die2);
         System.out.println("New sum: " + sum);
 
+        return; //Although main is a void method there is nothing wrong with writing return(without return variable)
+        // at the end of void methods
     } //End of the main method
 }

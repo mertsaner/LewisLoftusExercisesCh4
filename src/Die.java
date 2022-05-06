@@ -21,8 +21,8 @@ public class Die { //Die class responsible from initializing and updating of fac
     // They are basically initializers of the object of the class
     //----------------------------------------------------------------------------------
     public Die(){       //Constructor does not use return type since initializes the object
-        faceValue = 1;
-        backValue = 117;
+        faceValue = 1;  //This initilization is optional
+        //backValue = 117;
         //System.out.println("Alpha is: " + alpha); //prints zero since alpha initialized to 0
 
     }
