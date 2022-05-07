@@ -3,6 +3,8 @@ import java.io.Serial;
 public class Account {
 
     private String AccountName;
+    //  All initializations are primitive data types
+    // We will see in some cases, our data types will be objects
     private int AccountNumber; //const could be used
     private double balance;
     final double RATE = 0.035;

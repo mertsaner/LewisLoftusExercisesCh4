@@ -13,7 +13,9 @@ public class SmilingFacePanel extends JPanel {
     //--------------------------------------------------------------------------------
     //  Constructor: Sets up the main characteristics of this panel.
     //--------------------------------------------------------------------------------
-    public SmilingFacePanel()
+    public SmilingFacePanel()       //Constructor which initializes: background color,
+                                    // Dimension of the windows size,
+                                    // Font type and font size
     {
         setBackground(Color.blue);
         setPreferredSize(new Dimension(320,200));
@@ -25,7 +27,7 @@ public class SmilingFacePanel extends JPanel {
     //--------------------------------------------------------------------------------
     public void paintComponent (Graphics page){
 
-        super.paintComponent(page);
+        super.paintComponent(page); //Enables Background Coloring
 
         page.setColor(Color.yellow);        //color of the shape set
         //Drawing the shape start
