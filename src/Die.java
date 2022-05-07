@@ -22,7 +22,7 @@ public class Die { //Die class responsible from initializing and updating of fac
     //----------------------------------------------------------------------------------
     public Die(){       //Constructor does not use return type since initializes the object
         faceValue = 1;  //This initilization is optional
-        //backValue = 117;
+        backValue = 6;
         //System.out.println("Alpha is: " + alpha); //prints zero since alpha initialized to 0
 
     }
@@ -52,6 +52,34 @@ public class Die { //Die class responsible from initializing and updating of fac
                                 // third word represents name of the method
         return faceValue;
     }
+
+    //-------------------------------------------------------------------------------------
+    // getFaceDown method in coverage of Self-Review 4.21
+    //-------------------------------------------------------------------------------------
+    public int getFaceDown(){
+        switch (faceValue) {//On a standard die, the sum of any two opposite faces is seven
+            case 1:
+                backValue = 6;
+                break;
+            case 2:
+                backValue = 5;
+                break;
+            case 3:
+                backValue = 4;
+                break;
+            case 4:
+                backValue = 3;
+                break;
+            case 5:
+                backValue = 2;
+                break;
+            case 6:
+                backValue = 1;
+                break;
+        }
+        return backValue;
+    }
+
 
     //--------------------------------------------------------------------------------------
     // Returns a string representation of this die.
