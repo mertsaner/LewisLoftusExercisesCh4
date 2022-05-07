@@ -16,11 +16,18 @@ public class SplatPanel extends JPanel
     //Constructor
     //--------------------------------------------------------------------------
 public SplatPanel () {       //Constructor which initializes circle1, circle2, circle3, circle4, circle5 objects from Circle class
-    circle1 = new Circle(30, Color.red, 70, 35);
-    circle2 = new Circle(50, Color.green, 30, 20);
-    circle3 = new Circle(100, Color.cyan, 60, 85);
-    circle4 = new Circle(45, Color.yellow, 170, 30);
-    circle5 = new Circle(60, Color.blue, 200, 60);
+
+    circle1 = new Circle( Color.red, 70, 35);
+    circle2 = new Circle( Color.green, 30, 20);
+    circle3 = new Circle( Color.cyan, 60, 85);
+    circle4 = new Circle( Color.yellow, 170, 30);
+    circle5 = new Circle( Color.blue, 200, 60);
+
+//    circle1 = new Circle(30, Color.red, 70, 35);
+//    circle2 = new Circle(50, Color.green, 30, 20);
+//    circle3 = new Circle(100, Color.cyan, 60, 85);
+//    circle4 = new Circle(45, Color.yellow, 170, 30);
+//    circle5 = new Circle(60, Color.blue, 200, 60);
 
     setPreferredSize(new Dimension(300, 200));  //The method inherited from
     setBackground(Color.black);
