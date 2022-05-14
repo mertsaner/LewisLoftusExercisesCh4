@@ -1,8 +1,3 @@
-//*************************************************************************
-//      PushCounterPanel.java           Author: Lewis/Loftus
-//
-//      Demonstrates a graphical user interface and an event listener.
-//*************************************************************************
 
 import java.awt.*;  //Importing Java Abstract Window Toolkit (Java AWT)
 import java.awt.event.*;    //Importing Java Abstract Window Toolkit (Java AWT)
@@ -34,7 +29,7 @@ public class PushCounterPanel extends JPanel {
 
         //===Adding New Listener to PushButton
         myCheckbox.addActionListener(new BoxChecker());
-        push.addActionListener(new ButtonListener());
+        push.addItemListener(new ButtonListener());
 
 
         //===Create new label object with "Pushes:" writing
