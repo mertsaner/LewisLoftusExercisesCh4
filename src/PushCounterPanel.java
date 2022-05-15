@@ -53,12 +53,10 @@ public class PushCounterPanel extends JPanel {
         //  Updates the counter and label when the button is pushed.
         //-------------------------------------------------------------------------------
         public void actionPerformed(ActionEvent event) {
-            if(box) {
-            count++;
-            label.setText("Pushes: " + count);
-            }
-            else
-            {
+            if (box) {
+                count++;
+                label.setText("Pushes: " + count);
+            } else {
                 label.setText("Please accept terms and conditions!");
             }
         }
