@@ -1,4 +1,3 @@
-
 import java.awt.*;  //Importing Java Abstract Window Toolkit (Java AWT)
 import java.awt.event.*;    //Importing Java Abstract Window Toolkit (Java AWT)
 import javax.swing.*; //Importing javax.swing package
@@ -29,7 +28,7 @@ public class PushCounterPanel extends JPanel {
 
         //===Adding New Listener to PushButton
         myCheckbox.addActionListener(new BoxChecker());
-        push.addItemListener(new ButtonListener());
+        push.addActionListener(new ButtonListener());
 
 
         //===Create new label object with "Pushes:" writing
@@ -53,10 +52,12 @@ public class PushCounterPanel extends JPanel {
         //  Updates the counter and label when the button is pushed.
         //-------------------------------------------------------------------------------
         public void actionPerformed(ActionEvent event) {
-            if (box) {
+            if(box) {
                 count++;
                 label.setText("Pushes: " + count);
-            } else {
+            }
+            else
+            {
                 label.setText("Please accept terms and conditions!");
             }
         }
@@ -64,28 +65,28 @@ public class PushCounterPanel extends JPanel {
 
 
 
-        private class BoxChecker implements ActionListener
+    private class BoxChecker implements ActionListener
+    {
+        //------------------------------------------------------------------------------
+        //  Updates the counter and label when the button is pushed.
+        //-------------------------------------------------------------------------------
+        public void actionPerformed(ActionEvent event){
+            box = true;
+        }
+
+        public void itemStateChanged(ItemEvent e)
         {
-            //------------------------------------------------------------------------------
-            //  Updates the counter and label when the button is pushed.
-            //-------------------------------------------------------------------------------
-            public void actionPerformed(ActionEvent event){
-                box = true;
-            }
 
-            public void itemStateChanged(ItemEvent e)
+            if (e.getStateChange() == 1)
             {
-
-                if (e.getStateChange() == 1)
-                {
-                    box = true;
-                    System.out.println("hi there");
-                    label.setText("geeksforgeeks  selected");
-                }
-                else
-                {
-                    box = false;
-                }
+                box = true;
+                System.out.println("hi there");
+                label.setText("geeksforgeeks  selected");
             }
+            else
+            {
+                box = false;
+            }
+        }
     }
 }
