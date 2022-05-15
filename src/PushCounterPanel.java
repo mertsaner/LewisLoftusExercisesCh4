@@ -51,7 +51,7 @@ public class PushCounterPanel extends JPanel {
         //------------------------------------------------------------------------------
         //  Updates the counter and label when the button is pushed.
         //-------------------------------------------------------------------------------
-        public void actionPerformed(ActionEvent event) {
+        public void actionPerformed(ActionEvent event) {        //Implement keyword is used to implement interfaces to the classes
             if(box) {
                 count++;
                 label.setText("Pushes: " + count);
@@ -63,7 +63,8 @@ public class PushCounterPanel extends JPanel {
         }
     }
 
-    private class BoxChecker implements ActionListener
+    private class BoxChecker implements ActionListener      //Implement keyword is used to implement interfaces to the classes
+        //More on this later on
     {
         //------------------------------------------------------------------------------
         //  Updates the counter and label when the button is pushed.
