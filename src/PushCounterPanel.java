@@ -63,8 +63,6 @@ public class PushCounterPanel extends JPanel {
         }
     }
 
-
-
     private class BoxChecker implements ActionListener
     {
         //------------------------------------------------------------------------------
@@ -72,21 +70,6 @@ public class PushCounterPanel extends JPanel {
         //-------------------------------------------------------------------------------
         public void actionPerformed(ActionEvent event){
             box = true;
-        }
-
-        public void itemStateChanged(ItemEvent e)
-        {
-
-            if (e.getStateChange() == 1)
-            {
-                box = true;
-                System.out.println("hi there");
-                label.setText("geeksforgeeks  selected");
-            }
-            else
-            {
-                box = false;
-            }
         }
     }
 }
