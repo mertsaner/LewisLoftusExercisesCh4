@@ -30,7 +30,7 @@ public class PushCounterPanel extends JPanel {
 
         //===Declare new objects
         push = new JButton("Push me!");
-        myCheckbox = new JCheckBox("Accept term and Conditions!", false);
+        myCheckbox = new JCheckBox("Accept term and Conditions!");
 
         //===Adding New Listener to PushButton
         myCheckbox.addActionListener(new BoxChecker());
