@@ -1,5 +1,6 @@
 import java.awt.*;  //Importing Java Abstract Window Toolkit (Java AWT)
 import java.awt.event.*;    //Importing Java Abstract Window Toolkit (Java AWT)
+import java.util.Scanner;
 import javax.swing.*; //Importing javax.swing package
 
 
@@ -9,10 +10,11 @@ import javax.swing.*; //Importing javax.swing package
 public class PushCounterPanel extends JPanel {
 
     private int count;
-    private String trials;
     private JButton push;   //"declaration" of push object from JButton class
     private JLabel label;   //"declaration" of label object from JLabel Class
     private JCheckBox myCheckbox; //"declaration" of myCheckbox object from JCheckBox Class
+    private String myString;
+    private String earlier;
     private boolean box = false;
     //JButton, JLabel, JCheckBox all of which are predefined
 
@@ -21,9 +23,11 @@ public class PushCounterPanel extends JPanel {
     //-------------------------------------------------------------
 
     public PushCounterPanel() {
-        //Initialization
+        //===Initialization of variables
         count = 0;
-        trials = "0";
+        myString = "";
+        earlier = "";
+
         //===Declare new objects
         push = new JButton("Push me!");
         myCheckbox = new JCheckBox("Accept term and Conditions!", false);
@@ -51,7 +55,7 @@ public class PushCounterPanel extends JPanel {
         add(myCheckbox);
 
         //Arranging dimensions of the frame and Colors
-        setPreferredSize(new Dimension(800, 100));
+        setPreferredSize(new Dimension(800, 200));
         setBackground(Color.cyan);
     }
 
@@ -66,10 +70,15 @@ public class PushCounterPanel extends JPanel {
         //-------------------------------------------------------------------------------
         public void actionPerformed(ActionEvent event) {        //Implement keyword is used to implement interfaces to the classes
             if(box) {
-                count++;
                 //label.setText("Pushes: " + count);        //Original Version which shows count number
-               // trials = trials +   //String trial equals to adding count numbers one by one to near each other
-                label.setText("Number of Trials: " + trials);
+
+                //================================================================
+                //Updated version according to Self-Review 4.33
+                earlier = Integer.toString(count); //string earlier is equal to new trial in each turn
+                count++;
+                myString =  myString + earlier ;
+                label.setText("Number of Trials equals to: "+  myString );
+                //================================================================
             }
             else
             {
