@@ -14,9 +14,9 @@ public class FahrenheitPanel extends JPanel {
     private JButton push;   //"declaration" of push object from JButton class
 
 
-    //---------------------------------------
+    //----------------------------------------------
     //Constructor: Sets up the main GUI components.
-    //---------------------------------------
+    //----------------------------------------------
     public FahrenheitPanel() {       //Same name with class name
 
         // decleared Ojects are initialized, objects in this class are inputLabel, outputLabel, resultLabel, fahrenheit
@@ -28,10 +28,13 @@ public class FahrenheitPanel extends JPanel {
 
 
         //new fahrenheit object is created
-        fahrenheit = new JTextField(5); // Is this a initial value?
+        fahrenheit = new JTextField(6); // Is this a initial value?
         fahrenheit.addActionListener(new TempListener());   //new TempListener Object from TempListener class created and passed to the addActionListener method
 
-        ButtonListener newListener = new ButtonListener();
+        TempListener newListener = new TempListener();//New object called newListener is added to ActionListener via push button
+        //Here doing this doable since both objects(push button and enter key do the exact same thing
+        //But if different kind of thing needed like adding a check box then it will do something different than calculation Fahrenheit value and
+        //In such cases it is better to define new Java Class which implements ActionListener interface again (differently then initial version this times)
         push.addActionListener(newListener);
 
         //Adding all objects of JLabel to the Diagram
@@ -61,22 +64,6 @@ public class FahrenheitPanel extends JPanel {
 
             resultLabel.setText(Integer.toString(celsiusTemp)); // resultLabel object uses setText method to write celcuisTemp to the frame in terms of String type
             //this type of writing shows there is an object which uses some methods
-        }
-    }
-
-
-    private class ButtonListener implements ActionListener {
-        public void actionPerformed(ActionEvent event) {
-
-            int fahrenheitTemp, celsiusTemp; //ints
-            String text = fahrenheit.getText(); //String text
-
-            fahrenheitTemp = Integer.parseInt(text);        //text changed to int and make fahrenheitTemp equalized to it
-            celsiusTemp = (fahrenheitTemp - 32) * 5 / 9;        //Actual Calculation
-
-            resultLabel.setText(Integer.toString(celsiusTemp)); // resultLabel object uses setText method to write celcuisTemp to the frame in terms of String type
-            //this type of writing shows there is an object which uses some methods
-
         }
     }
 }
