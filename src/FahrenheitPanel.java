@@ -1,4 +1,5 @@
 // Updated version of FahrenheitPanel.java app
+// Updated according to Self Review 4.35
 // Button added to the program
 // Hence user can use both enter key or push button to see result of the calculation
 
@@ -12,7 +13,7 @@ public class FahrenheitPanel extends JPanel {
     private JLabel inputLabel, outputLabel, resultLabel;        //Object Declarations in class level
     private JTextField fahrenheit;
     private JButton push;   //"declaration" of push object from JButton class
-
+    private int fahrenheitTemp, celsiusTemp; //ints
 
     //----------------------------------------------
     //Constructor: Sets up the main GUI components.
@@ -21,11 +22,10 @@ public class FahrenheitPanel extends JPanel {
 
         // decleared Ojects are initialized, objects in this class are inputLabel, outputLabel, resultLabel, fahrenheit
         inputLabel = new JLabel("Enter Fahrenheit temperature");
-        outputLabel = new JLabel("Temperature in Celsius: ");
-        resultLabel = new JLabel("---");
+        outputLabel = new JLabel("");
+        //resultLabel = new JLabel("---");
 
         push = new JButton("Push me!");
-
 
         //new fahrenheit object is created
         fahrenheit = new JTextField(6); // Is this a initial value?
@@ -41,10 +41,10 @@ public class FahrenheitPanel extends JPanel {
         add(inputLabel);
         add(fahrenheit);
         add(outputLabel);
-        add(resultLabel);
+       // add(resultLabel);     //Will be not used in Updated version
         add(push);
 
-        setPreferredSize(new Dimension(300, 125));   //Setting dimensions for Panel as we wish
+        setPreferredSize(new Dimension(400, 125));   //Setting dimensions for Panel as we wish
         setBackground(Color.yellow);        //Set the color of the background panel
     }
 
@@ -56,13 +56,15 @@ public class FahrenheitPanel extends JPanel {
         // ActionPerformed method performs the conversion when the enter key is pressed in the text field
         //--------------------------------
         public void actionPerformed(ActionEvent event) {
-            int fahrenheitTemp, celsiusTemp; //ints
             String text = fahrenheit.getText(); //String text
 
             fahrenheitTemp = Integer.parseInt(text);        //text changed to int and make fahrenheitTemp equalized to it
             celsiusTemp = (fahrenheitTemp - 32) * 5 / 9;        //Actual Calculation
 
-            resultLabel.setText(Integer.toString(celsiusTemp)); // resultLabel object uses setText method to write celcuisTemp to the frame in terms of String type
+            //resultLabel.setText(Integer.toString(celsiusTemp)); // resultLabel object uses setText method to write celcuisTemp to the frame in terms of String type
+
+
+            outputLabel.setText(fahrenheitTemp + " degrees Fahrenheit = " + celsiusTemp + " degrees Celsius ");
             //this type of writing shows there is an object which uses some methods
         }
     }
