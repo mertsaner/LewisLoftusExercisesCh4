@@ -28,7 +28,16 @@ public class PushCounterPanel extends JPanel {
 
         //===Adding New Listener to PushButton
         myCheckbox.addActionListener(new BoxChecker());
-        push.addActionListener(new ButtonListener());
+        //===CHANGES
+        //Instead using original which passes new ButtonListener Object to the addActionListener method/interface
+        //I have created new object called newListener and pass that to the addActionListener method/interface
+        //New implementation is much easier to read and understand
+        //===
+        ButtonListener newListener = new ButtonListener();
+        push.addActionListener(newListener);
+
+
+       // push.addActionListener(new ButtonListener());       //Original
 
 
         //===Create new label object with "Pushes:" writing
@@ -47,7 +56,9 @@ public class PushCounterPanel extends JPanel {
     //****************************************************************************
     // Represents a listener for button push(action) events.
     //****************************************************************************
-    private class ButtonListener implements ActionListener {
+    private class ButtonListener implements ActionListener { // This class provides the actual implementation of ActionListener interface.
+        // Name of the class: Button Listener
+        // Interface : ActionListener
         //------------------------------------------------------------------------------
         //  Updates the counter and label when the button is pushed.
         //-------------------------------------------------------------------------------
