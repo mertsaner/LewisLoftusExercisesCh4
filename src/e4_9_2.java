@@ -45,7 +45,6 @@
              setPreferredSize(new Dimension(400, 125));
              //Color myColor = new Color(myObject.red, myObject.green, myObject.blue);
                Color myColor = new Color(e4_9_2.red, e4_9_2.green, e4_9_2.blue);
-             //Color myColor = new Color(255, 0, 0);
              setBackground(myColor);        //Set the color of the background panel
          }
 }
