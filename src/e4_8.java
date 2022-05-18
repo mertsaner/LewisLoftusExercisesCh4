@@ -1,6 +1,3 @@
-
-import java.lang.Math;
-import java.util.*;
 // randomInRange method return
 // a random integer in the specified range (inclusive).
 public class e4_8 {
