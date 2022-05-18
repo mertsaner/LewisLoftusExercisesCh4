@@ -64,7 +64,7 @@ public class FahrenheitPanel extends JPanel {
             //resultLabel.setText(Integer.toString(celsiusTemp)); // resultLabel object uses setText method to write celcuisTemp to the frame in terms of String type
 
 
-            outputLabel.setText(fahrenheitTemp + " degrees Fahrenheit = " + celsiusTemp + " degrees Celsius ");
+            outputLabel.setText(fahrenheitTemp + " degrees Fahrenheit = " + celsiusTemp + " degrees  Celsius ");
             //this type of writing shows there is an object which uses some methods
         }
     }
