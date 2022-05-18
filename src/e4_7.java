@@ -1,5 +1,6 @@
 import java.util.*;
 
+// A random100() method creates random values between 1 and 100
 public class e4_7 {
 
     public static void main(String[] args) {
