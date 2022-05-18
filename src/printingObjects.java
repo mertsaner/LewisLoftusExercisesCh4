@@ -1,6 +1,6 @@
 public class printingObjects {
     int x = 5;
-    //private x = 123; reininitializing x as private would cause an error
+    //private x = 123; reinitializing x as private would cause an error
     private double y = 6.890;
     protected boolean mybool = false;
     

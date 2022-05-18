@@ -4,7 +4,7 @@
  *   The method should accept no parameters and return no value.
  */
 
-public class e4_4 {
+public class e4_5 {
     public static void main(String[] args) {
         synonyms();
     }
@@ -12,10 +12,13 @@ public class e4_4 {
     static void synonyms (){
         //In other call a method from main method, the method should be declared as static
         // Error Occurred, java: non-static method synonyms() cannot be referenced from a static context
-            System.out.println("Hi there, I am synonyms");
-            repeater();
-        }
-    static void repeater (){
-        System.out.println("Hi there, I am repeater");
-        }
+        String initial = "equal";
+        String firstSynonym = "equivalent";
+        String secondSynonym = "identical";
+
+        System.out.println("Two synonym of the word, equal: ");
+        System.out.println(firstSynonym);
+        System.out.println(secondSynonym);
+
+    }
 }
