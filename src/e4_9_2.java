@@ -2,6 +2,8 @@
  * Author: Mert Saner
  * A method called randomColor creates and returns a Color object that represents a random color
  */
+
+ //Git Detailed commands are added
  import java.awt.*;
  import javax.swing.*;
  import java.awt.Color;
