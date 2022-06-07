@@ -55,7 +55,8 @@
      public colorfulPanel()  {
              setPreferredSize(new Dimension(400, 125));
              //Color myColor = new Color(myObject.red, myObject.green, myObject.blue);
-               Color myColor = new Color(e4_9_2.red, e4_9_2.green, e4_9_2.blue);
+               Color myColor = new Color(e4_9_2.red, e4_9_2.green, e4_9_2.blue);   //this line written with the help of Intellij Show Quick Fixes feature
+               //red green and blue objects called from the class e4_9_2
              setBackground(myColor);        //Set the color of the background panel
          }
 
