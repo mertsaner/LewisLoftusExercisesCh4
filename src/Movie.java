@@ -15,7 +15,7 @@ public class Movie {
 
        // OR
 
-//        this.title = title;
+//        this.title = title;           //this. always on the left side
 //        this.director = director;
 
 
