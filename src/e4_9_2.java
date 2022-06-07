@@ -57,4 +57,5 @@
                Color myColor = new Color(e4_9_2.red, e4_9_2.green, e4_9_2.blue);
              setBackground(myColor);        //Set the color of the background panel
          }
+
 }
