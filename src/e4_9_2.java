@@ -7,15 +7,21 @@
  import javax.swing.*;
  import java.awt.Color;
 
- public class e4_9_2 {
+ public class e4_9_2 {      //Only one class name with public prefix possible
      static int[] returnArray = new int[3];
      static int red;
      static int green;
      static int blue;
 
      public static void main(String[] args) {
-         colorfulPanel myObject = new colorfulPanel();
+         colorfulPanel myObject = new colorfulPanel();  //An object called myObject created from colorfulPanel class
+         //For instance int abc = 5 means, object abc created from integer class and initialized to 5
          randomColor();
+         //colorfulPanel.colorfulPanel2();
+
+         //colorfulPanel myMethod = new colorfulPanel(/* constructor args here */);
+        // myMethod.colorfulPanel2(); // Having fixed name to follow conventions
+
 
          red = returnArray[0];
          green = returnArray[1];
@@ -27,7 +33,6 @@
          frame.getContentPane().add(panel);
          frame.pack();
          frame.setVisible(true);
-         //myObject.randomColor();
      }
 
      static int[] randomColor() {
@@ -41,8 +46,12 @@
      }
  }
 
- class colorfulPanel extends JPanel {
-         public colorfulPanel() {
+ class colorfulPanel extends JPanel {       //Second class in the same .java file
+                                            //colorfulPanel class extends JPanel class
+                                            //colorfulPanel class inherits characteristics of the Jpanel class
+                                            //colorfulPanel method
+                //Since this method is the same name with the class name it works as an constructor
+     public colorfulPanel()  {
              setPreferredSize(new Dimension(400, 125));
              //Color myColor = new Color(myObject.red, myObject.green, myObject.blue);
                Color myColor = new Color(e4_9_2.red, e4_9_2.green, e4_9_2.blue);
