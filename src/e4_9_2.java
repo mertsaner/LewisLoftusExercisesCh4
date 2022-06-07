@@ -50,6 +50,7 @@
                                             //colorfulPanel class extends JPanel class
                                             //colorfulPanel class inherits characteristics of the Jpanel class
                                             //colorfulPanel method
+     //
                 //Since this method is the same name with the class name it works as an constructor
      public colorfulPanel()  {
              setPreferredSize(new Dimension(400, 125));
