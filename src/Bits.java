@@ -1,11 +1,11 @@
-public class BitValue {
+public class Bits {
 
     public static void main (String[] args)
     {
-        Bits myBit, yourBit;
+        BitValue myBit, yourBit;
 
-        myBit = new Bits();     //Creating new Bits object (named myBit) from Bits driver class
-        yourBit = new Bits();     //Creating new Bits object (named yourBit) from Bits driver class
+        myBit = new BitValue();     //Creating new Bits object (named myBit) from Bits driver class
+        yourBit = new BitValue();     //Creating new Bits object (named yourBit) from Bits driver class
 
         System.out.println("Program Started!");
         System.out.println("You can see intial value of the bits below!");
@@ -42,11 +42,11 @@ public class BitValue {
     }
 }
 
-class Bits {            //Driver Class, in which we define getters,setters,toString and  certain functions related with logic of the program
+class BitValue {            //Driver Class, in which we define getters,setters,toString and  certain functions related with logic of the program
 
     private Boolean bit;    // variable bit declared as Boolean
 
-    public Bits() {     //Constructor which initializes bits to true
+    public BitValue() {     //Constructor which initializes bits to true
 
         bit = true;     // each bit initialized to true
     }

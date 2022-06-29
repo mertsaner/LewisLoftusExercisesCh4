@@ -10,18 +10,18 @@
  @author mertsaner
 */
 
-public class NumberOfGoals {
+public class GoalTracker {
 
     //------------------------------------------------------------------------------
     // Creates two Goals object and make them goal several times
     //------------------------------------------------------------------------------
 
-    public static void main(String[] args) {
-        GoalTracker goal1, goal2;
+    public static void main(String[] args) {    //Driver Class
+        NumberOfGoals goal1, goal2;
         int sum;                        //Number of Goals scored declared
 
-        goal1 = new GoalTracker (); // Creating new Goals object (named object1) from Die Class
-        goal2 = new GoalTracker (); // Creating new Goals object (named object1) from Die Class
+        goal1 = new NumberOfGoals (); // Creating new Goals object (named object1) from Die Class
+        goal2 = new NumberOfGoals (); // Creating new Goals object (named object1) from Die Class
 
 
         //goal1.comboGoal();
@@ -43,11 +43,10 @@ public class NumberOfGoals {
     }
 }
 
-class GoalTracker {     //Driver Class
+class NumberOfGoals {
 
-    private int currentGoal; // varibale shows current value of goals made
-
-    public GoalTracker(){
+    private int currentGoal; // varibale shows current value of goals mad
+    public NumberOfGoals(){
         currentGoal = 0;        //Starting value goal number in the match
                                 //Constructor of the class works as an initializer
     }

@@ -3,27 +3,25 @@
  * Circle program which finds circumference and area of the any given circle
  */
 
-public class Circle2 {
-
-
+public class MultiCircle {                  //driver class
     public static void main (String [] main) {
 
-    MultiCircle circle1, circle2;
+        Circle2 circle1, circle2;
 
-    circle1 = new MultiCircle (5);
-    circle2 = new MultiCircle (4);
+        circle1 = new Circle2 (5);
+        circle2 = new Circle2 (4);
 
-    System.out.println("Descripiton of the circle1: " + circle1);
-    System.out.println("Descripiton of the circle2: " + circle2);
+        System.out.println("Descripiton of the circle1: " + circle1);
+        System.out.println("Descripiton of the circle2: " + circle2);
     }
 }
 
-class MultiCircle {     //driver class where we define getters,setters,toString and necessary functions for our program
-                        // 💪🏻💪🏻💪🏻
+class Circle2 {     //Other Class where we define getters,setters,toString and necessary functions for our program
+    // 💪🏻💪🏻💪🏻
 
     private double radius; // varibale radius declared
 
-    public MultiCircle(double myRadius){       //Constructor method/function which will initialize the variables
+    public Circle2(double myRadius){       //Constructor method/function which will initialize the variables
         radius = myRadius;
         //COMMENT: If you doubt which side to write which variable
         // Don't forget that declared VARIABLES on the TOP ALWAYS GOES LEFT SIDE
