@@ -22,7 +22,7 @@ class Circle2 {     //Other Class where we define getters,setters,toString and n
     private double radius; // varibale radius declared
 
     public Circle2(double myRadius){       //Constructor method/function which will initialize the variables
-        radius = myRadius;
+        radius = myRadius;              //Can also written as this.radius= radius
         //COMMENT: If you doubt which side to write which variable
         // Don't forget that declared VARIABLES on the TOP ALWAYS GOES LEFT SIDE
     }
