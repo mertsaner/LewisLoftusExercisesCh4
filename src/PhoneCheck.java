@@ -42,8 +42,6 @@ class Phone {
     int getReleaseYear(){
         return releaseYear;
     }
-
-
     //Setters not used
 //    public void setMake(){
 //        make = " ";
@@ -55,8 +53,7 @@ class Phone {
 //
 //    public void setReleaseYear(){
 //        model = " ";
-
-    //
+//
 
     boolean isObsolete(){
         boolean obsolete = false; //OR directly, boolean obsolete = (2022 - getReleaseYear()) > 10;
