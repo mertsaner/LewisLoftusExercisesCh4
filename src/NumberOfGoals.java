@@ -17,37 +17,37 @@ public class NumberOfGoals {
     //------------------------------------------------------------------------------
 
     public static void main(String[] args) {
-        Goals goal1, goal2;
+        GoalTracker goal1, goal2;
         int sum;                        //Number of Goals scored declared
 
-        goal1 = new Goals (); // Creating new Goals object (named object1) from Die Class
-        goal2 = new Goals (); // Creating new Goals object (named object1) from Die Class
+        goal1 = new GoalTracker (); // Creating new Goals object (named object1) from Die Class
+        goal2 = new GoalTracker (); // Creating new Goals object (named object1) from Die Class
 
 
         //goal1.comboGoal();
         //goal1.goalMaker();
-        goal2.setGoals(12);
 
         System.out.println("Goal1: " + goal1);
         System.out.println("Goal2: " + goal2);
 
-        sum = goal1.getGoals() + goal2.getGoals();
+        sum = goal1.getGoal() + goal2.getGoal();
         System.out.println("Sum of the Goals: " + sum);
 
-        System.out.println("Goalmaker function called!");
-        sum = goal1.goalMaker() + goal2.goalMaker();
+        System.out.println("set Goalfunction called!");
+        goal1.setGoal();
+        goal2.setGoal();
+        sum = goal1.getGoal() + goal2.getGoal();
         System.out.println("Goal1: " + goal1);
         System.out.println("Goal2: " + goal2);
         System.out.println("New sum: " + sum);
-
     }
 }
 
-class Goals {
+class GoalTracker {     //Driver Class
 
     private int currentGoal; // current value showing number of goals made
 
-    public Goals(){
+    public GoalTracker(){
         currentGoal = 0;        //Starting value goal number in the match
                                 //Constructor of the class works as an initializer
     }
@@ -57,17 +57,11 @@ class Goals {
         return currentGoal;
     }
 
-    public int goalMaker() {
+    public void setGoal() {
         currentGoal++;
-        return currentGoal;
     }
 
-
-    public void setGoals(int value) {
-        currentGoal = value;
-    }
-
-    public int getGoals() {
+    public int getGoal() {
         return currentGoal;
     }
 
