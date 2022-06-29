@@ -57,7 +57,7 @@ class Phone {
 
     boolean isObsolete(){
         boolean obsolete = false; //OR directly, boolean obsolete = (2022 - getReleaseYear()) > 10;
-        if ((2022 - getReleaseYear()) > 10 )
+        if ((2022 - getReleaseYear()) > 10)
             obsolete = true;
 
         return obsolete;
