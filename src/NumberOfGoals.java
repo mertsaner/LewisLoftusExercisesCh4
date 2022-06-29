@@ -27,8 +27,8 @@ public class NumberOfGoals {
         //goal1.comboGoal();
         //goal1.goalMaker();
 
-        System.out.println("Goal1: " + goal1);
-        System.out.println("Goal2: " + goal2);
+        System.out.println("Goal1: " + goal1);      //This kind of direct value of object printing possible
+        System.out.println("Goal2: " + goal2);      // THANKS TO toString() method defined line 68
 
         sum = goal1.getGoal() + goal2.getGoal();
         System.out.println("Sum of the Goals: " + sum);
@@ -45,7 +45,7 @@ public class NumberOfGoals {
 
 class GoalTracker {     //Driver Class
 
-    private int currentGoal; // current value showing number of goals made
+    private int currentGoal; // varibale shows current value of goals made
 
     public GoalTracker(){
         currentGoal = 0;        //Starting value goal number in the match
@@ -65,7 +65,7 @@ class GoalTracker {     //Driver Class
         return currentGoal;
     }
 
-    public String toString()
+    public String toString()     //Without this method printing objects will just print their addresses instead of their values
     {
 
         String result = Integer.toString(currentGoal);
