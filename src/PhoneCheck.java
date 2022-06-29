@@ -20,9 +20,9 @@ public class PhoneCheck {
 
 class Phone {
 
-    private String make;
-    private String model;
-    private int releaseYear;
+    private final String make;
+    private final String model;
+    private final int releaseYear;
 
 
     public Phone(String make, String model, int releaseYear){
@@ -59,7 +59,7 @@ class Phone {
     //
 
     public boolean isObsolete(){
-        boolean obsolete = false;
+        boolean obsolete = false; //OR directly, boolean obsolete = (2022 - getReleaseYear()) > 10;
         if ((2022 - getReleaseYear()) > 10 )
             obsolete = true;
 
