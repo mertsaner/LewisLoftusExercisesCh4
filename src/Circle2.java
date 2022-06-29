@@ -10,9 +10,11 @@ public class Circle2 {
 
     MultiCircle circle1, circle2;
 
-    circle1 = new MultiCircle ();
-    circle2 = new MultiCircle ();
+    circle1 = new MultiCircle (5);
+    circle2 = new MultiCircle (4);
 
+    System.out.println("Descripiton of the circle1: " + circle1);
+    System.out.println("Descripiton of the circle2: " + circle2);
     }
 }
 
@@ -36,20 +38,20 @@ class MultiCircle {     //driver class where we define getters,setters,toString 
     }
 
     public double circumference(){
-        double circumference = 2*Math.PI*radius;
+        double circumference = 2*3.14*radius; //for exact result 2*Math.PI*radius
         return circumference;
     }
 
     public double area(){
-        double area = 2*Math.PI*radius*radius;
+        double area = 3.14*radius*radius; //for exact result Math.PI*radius*radius
         return area;
     }
 
     public String toString() {
 
-        String result = "Radius of this circle is: " + Double.toString(radius) +
-                "Area of this circle is: " + Double.toString(area()) +
-                "circumference of this circle is: " Double.toString(circumference()) ;
+        String result = "Radius: " + Double.toString(radius) +
+                " Area: " + Double.toString(area()) +
+                " Circumference: " + Double.toString(circumference()) ;
 
         return result;
     }
