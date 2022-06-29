@@ -10,7 +10,7 @@ public class PhoneCheck {
      phone4 = new Phone("Apple", "Iphone 6", 2014);
      phone5 = new Phone("Nokia", "5110", 1998);
 
-        System.out.println("Phone1;"+ phone1 );
+        System.out.println("Phone1; "+ phone1 );
         System.out.println("Phone2; "+ phone2 );
         System.out.println("Phone3; "+ phone3 );
         System.out.println("Phone4; "+ phone4 );
@@ -25,21 +25,21 @@ class Phone {
     private final int releaseYear;
 
 
-    public Phone(String make, String model, int releaseYear){
+    Phone(String make, String model, int releaseYear){
         this.make = make;
         this.model = model;
         this.releaseYear = releaseYear;
     }
 
-    public String getMake(){        //CHECK WHETHER getmake also works
+    String getMake(){        //letter M must capitalized, writing it like "getmake" does not works
         return make;
     }
 
-    public String getModel(){
+    String getModel(){
         return model;
     }
 
-    public int getReleaseYear(){
+    int getReleaseYear(){
         return releaseYear;
     }
 
@@ -58,7 +58,7 @@ class Phone {
 
     //
 
-    public boolean isObsolete(){
+    boolean isObsolete(){
         boolean obsolete = false; //OR directly, boolean obsolete = (2022 - getReleaseYear()) > 10;
         if ((2022 - getReleaseYear()) > 10 )
             obsolete = true;
