@@ -1,4 +1,4 @@
-public class LaptopRecords {
+class LaptopRecords {
 
     public static void main (String[] args){
 
@@ -32,7 +32,7 @@ public class LaptopRecords {
     }
 }
 
-class Laptop {
+public class Laptop {
     //this. identifier refers to this instance data declaration
     //This declarations will be always on the left side
 
