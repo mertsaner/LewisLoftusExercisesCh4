@@ -1,5 +1,5 @@
 class DriverClassOfCourse {
-     private static void someMethod() {
+     public static void someMethod() {
         Course math, physics;
 
         //MAKE MAIN WORK IN ITS STANDALONE FUNCTION/CLASS

@@ -1,9 +1,9 @@
 class anyname {
-    public static void main (String [] args) {      //Set main at the end
+    public static void main(String[] args) {      //Set main at the end
 
         //THREE WAYS TO PUT MAIN IN DIFFERENT JAVA CLASS
         //1.  DIRECT CALL
-        // DriverClassOfCourse.someMethod();
+         DriverClassOfCourse.someMethod();
         //2. CREATE NEW METHOD IN THE SAME CLASS AND CALL IT
         // anymethod();
         //3. CREATE OBJECT OF THE CLASS TO BE CALLED AND THEN CALL IT
@@ -11,16 +11,14 @@ class anyname {
         // object1 = new DriverClassOfCourse();
         // object1.someMethod();       //Called the method of the another class by creating its object
         //4.CREATE NEW CLASS AND CALL DIRECTLY FROM THERE, WHICH SAME WITH SAME LOGIC WITH STEP 1
-        anyClass.mymethod();
+        //  anyClass.mymethod();
     }
 
-//    public static void anymethod(){
+//    public static void anymethod() {
 //        DriverClassOfCourse.someMethod();
 //    }
 }
-
-class anyClass{
-    public static void mymethod(){
-        //DriverClassOfCourse.someMethod();
-    }
-}
+//class anyClass{
+//    public static void mymethod(){
+//        DriverClassOfCourse.someMethod();
+//    }
