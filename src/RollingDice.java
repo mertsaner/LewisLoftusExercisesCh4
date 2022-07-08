@@ -9,6 +9,7 @@ public class RollingDice {
     //--------------------------------
     public static void main(String[] args)
     {
+
         Die die1, die2;    // Initialize die1 and die2 objects from Die class
         int sum;           // Initialize sum object from int class (Redefine what you have already known for a long time)
 
