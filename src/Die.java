@@ -5,10 +5,10 @@
 // between 1 and 6.
 //**********************************
 
-public class Die { //Die class responsible from initializing and updating of face value, which is called ENCAPSULATION
+public class Die {  //Die class responsible from initializing and updating of face value, which is called ENCAPSULATION
                     //The main method should not (and in fact cannot) access the faceValue variable directly.
 
-    private final int MAX = 6; //maximum face value, written with final so that it will not change (like const in C++)
+    private static final int MAX = 6; //maximum face value, written with final so that it will not change (like const in C++)
     int alpha;
 
     private int faceValue; // Initializing current value showing on the die
@@ -80,7 +80,6 @@ public class Die { //Die class responsible from initializing and updating of fac
         return backValue;
     }
 
-
     //--------------------------------------------------------------------------------------
     // Returns a string representation of this die.
     //--------------------------------------------------------------------------------------
@@ -88,7 +87,6 @@ public class Die { //Die class responsible from initializing and updating of fac
         String result = Integer.toString(faceValue);
         return result;
     }
-
     //All methods defined publicly so in here methods provide services to clients
     //These all are service methods
 }

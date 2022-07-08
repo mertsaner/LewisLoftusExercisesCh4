@@ -27,7 +27,7 @@ public class RollingDice {
         // So first two is exactly the same
         // Last one is different method but reaches the same value
         //============ !IMPORTANT!=====
-        System.out.println("0 Die One: " + die1 + ", Die Two: " + die2);//We are printing the object, when we print an object
+        System.out.println("Die One: " + die1 + ", Die Two: " + die2);//We are printing the object, when we print an object
         //System.out.println("1 Die One: " + die1.toString() + ", Die Two: " + die2.toString());
         //System.out.println("2 Die One: " + die1.getFaceValue() + ", Die Two: " + die2.getFaceValue()); //The following line works and does the same job with the line above //Expected Writing, let see what it prints
         //===============================================================================================

@@ -1,5 +1,5 @@
 class DriverClassOfCourse {
-     public void someMethod() {
+     public static void someMethod() {
         Course math, physics;
 
         //MAKE MAIN WORK IN ITS STANDALONE FUNCTION/CLASS
@@ -18,6 +18,6 @@ class DriverClassOfCourse {
 
 //    public static void main(String[] args) {
 //        someMethod();       //Private olup olmamasi ayni Classin icindekileri baglamaz
-//                            //Bu adam Her turlu onu Cagirir
+//                            //Classin icindekiler onu Cagirir, ama disindakilere gizlidir
 //    }
 }

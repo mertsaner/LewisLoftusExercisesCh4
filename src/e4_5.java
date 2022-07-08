@@ -9,7 +9,7 @@ public class e4_5 {
         synonyms();
     }
 
-    static void synonyms (){
+     static void synonyms (){
         //In other call a method from main method, the method should be declared as static
         // Error Occurred, java: non-static method synonyms() cannot be referenced from a static context
         String initial = "equal";
