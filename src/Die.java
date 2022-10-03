@@ -21,10 +21,8 @@ public class Die {  //Die class responsible from initializing and updating of fa
     // They are basically initializers of the object of the class
     //----------------------------------------------------------------------------------
     public Die(){       //Constructor does not use return type since initializes the object
-        faceValue = 1;  //This initilization is optional
-        backValue = 6;
-        //System.out.println("Alpha is: " + alpha); //prints zero since alpha initialized to 0
-
+         faceValue = 2;  //This initilization is optional
+         //System.out.println("Alpha is: " + alpha); //prints zero since alpha initialized to 0
     }
 
     //-----------------------------------------------------------------------------------
@@ -32,15 +30,22 @@ public class Die {  //Die class responsible from initializing and updating of fa
     //-----------------------------------------------------------------------------------
     public int roll(){
         faceValue = (int)(Math.random() * MAX) + 1;
-
         return faceValue;
+    }
+
+    public Boolean equals(int value) {
+        Boolean check;
+        if(value == faceValue)
+            check = true;
+        else
+            check = false;
+        return check;
     }
 
     //-------------------------------------------------------------------------------------
     // Face value mutator. This method help us to set the FaceValue
     //-------------------------------------------------------------------------------------
     public void setFaceValue (int value){
-
         faceValue = value;
     }
 
